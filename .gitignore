@@ -2,3 +2,7 @@ node_modules/
 .vscode/
 *.log
 .DS_Store
+
+# Source files kept locally (copies live in assets/)
+IMG_4004.JPG
+Resume - Eainan Salsabila.pdf

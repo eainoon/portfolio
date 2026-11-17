@@ -1,104 +1,481 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eainan Salsabila — Portfolio</title>
-  <meta name="description" content="Portfolio of Eainan Salsabila, Computer Science student focusing on web, multimedia, and AI." />
+  <title>Eainan Salsabila — Computer Scientist & Creative Technologist</title>
+  <meta name="description" content="Portfolio of Eainan Salsabila — 21-year-old Computer Science undergraduate (CGPA 3.71, Dean's List) with 8 years of coding experience, building AI, data and mobile solutions." />
+  <meta name="author" content="Eainan Salsabila" />
+  <meta property="og:title" content="Eainan Salsabila — Portfolio" />
+  <meta property="og:description" content="AI, data & full-stack builder. 8 years of coding since age 13." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta name="theme-color" content="#140b26" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23c4b5fd'/><stop offset='1' stop-color='%23a855f7'/></linearGradient></defs><rect width='64' height='64' rx='18' fill='%23140b26'/><text x='50%' y='58%' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-style='italic' font-size='38' fill='url(%23g)'>E</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1>Eainan Salsabila</h1>
-      <nav>
-        <ul class="nav">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="#home" class="logo" aria-label="Home">Eainan<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light/dark theme">
+          <svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+        </button>
+        <a href="assets/Eainan-Salsabila-Resume.pdf" class="btn btn-sm btn-primary" download>Résumé</a>
+        <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <!-- Hero -->
-    <section id="about" class="hero container">
-      <img src="assets/profile.jpg" alt="Eainan Salsabila photo" class="profile-photo" />
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero container">
       <div class="hero-text">
-        <h2>Computer Science Student |  Web Development & Multimedia</h2>
-        <p>I’m a Computer Science student passionate about combining code, design, and creativity to build impactful solutions.</p>
-        <p class="links">
-          <a href="https://github.com/eainoon" target="_blank" rel="noopener">GitHub</a> | 
-          <a href="https://www.linkedin.com/in/eainan-salsabila-713628366/" target="_blank" rel="noopener">LinkedIn</a> | 
-          <a href="https://replit.com/@eainans07" target="_blank" rel="noopener">Replit</a>
+        <p class="chip reveal"><span class="pulse"></span> Open to internships &amp; collaborations</p>
+        <p class="hello reveal">hi there, I'm</p>
+        <h1 class="hero-name reveal">Eainan <em>Salsabila</em></h1>
+        <p class="hero-role reveal">I'm a <span class="typed" id="typed">Computer Scientist</span><span class="caret">|</span></p>
+        <p class="hero-sub reveal">
+          I'm a 21-year-old Computer Science undergraduate and I wrote my first line of code at
+          <strong>13</strong>. Eight years later, I build <strong>AI systems, data platforms and apps</strong>
+          that are as thoughtful as they are technical — with privacy and people at the centre.
         </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">See my work
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="assets/Eainan-Salsabila-Resume.pdf" class="btn btn-ghost" download>Download résumé
+            <svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
+        </div>
+        <ul class="socials reveal">
+          <li><a href="https://github.com/eainoon" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/eainan-salsabila-713628366/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" class="fill"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a></li>
+          <li><a href="https://replit.com/@eainans07" target="_blank" rel="noopener" aria-label="Replit">
+            <svg viewBox="0 0 24 24" class="fill"><path d="M4 2.5C4 1.7 4.7 1 5.5 1h5.8c.8 0 1.5.7 1.5 1.5V8H5.5C4.7 8 4 7.3 4 6.5v-4zM12.8 8h5.7c.8 0 1.5.7 1.5 1.5v5c0 .8-.7 1.5-1.5 1.5h-5.7V8zM4 17.5c0-.8.7-1.5 1.5-1.5h7.3v5.5c0 .8-.7 1.5-1.5 1.5H5.5c-.8 0-1.5-.7-1.5-1.5v-4z"/></svg></a></li>
+          <li><a href="mailto:eainans5@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="M3 6.5l9 6.5 9-6.5"/></svg></a></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="portrait">
+          <div class="portrait-ring"></div>
+          <div class="portrait-frame">
+            <img src="assets/profile.jpg" alt="Portrait of Eainan Salsabila" />
+          </div>
+          <div class="float-badge b1"><span class="emoji">🏆</span><div><strong>Dean's List</strong><small>Award recipient</small></div></div>
+          <div class="float-badge b2"><span class="emoji">💻</span><div><strong>8+ years</strong><small>coding since 13</small></div></div>
+          <div class="float-badge b3"><span class="emoji">✨</span><div><strong>3.71 CGPA</strong><small>BSc Computer Science</small></div></div>
+          <span class="sparkle s1">✦</span><span class="sparkle s2">✧</span><span class="sparkle s3">✦</span>
+        </div>
+      </div>
+
+      <a href="#stats" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section id="stats" class="container stats">
+      <div class="stat reveal"><span class="num" data-count="8" data-suffix="+">0</span><span class="lbl">Years of coding<br/>since age 13</span></div>
+      <div class="stat reveal"><span class="num" data-count="9" data-suffix="+">0</span><span class="lbl">Major projects<br/>AI · Data · Mobile</span></div>
+      <div class="stat reveal"><span class="num" data-count="3.71" data-decimals="2">0</span><span class="lbl">University CGPA<br/>Dean's List</span></div>
+      <div class="stat reveal"><span class="num" data-count="8">0</span><span class="lbl">Programming<br/>languages</span></div>
+      <div class="stat reveal"><span class="num" data-count="10" data-suffix="+">0</span><span class="lbl">Leadership<br/>roles held</span></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="container section">
+      <div class="section-head reveal">
+        <span class="eyebrow">01 — About me</span>
+        <h2>Logic meets <em>creativity</em>.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead">I've been in love with computers since I was 13 — when most kids were playing games, I was curious about how they were <em>built</em>.</p>
+          <p>That curiosity turned into eight years of building: from my first HTML pages and school Computer Science stream, to machine-learning platforms, multi-agent AI frameworks and cross-platform mobile apps today. I'm currently pursuing a <strong>Bachelor in Computer Science at Management and Science University</strong>, holding a <strong>3.71 CGPA</strong> and a place on the <strong>Dean's List</strong>.</p>
+          <p>What makes me different is that I sit comfortably on both sides of the screen. I'm a developer who also designs, a data person who also speaks on stage, and a leader who has chaired teams to award-winning results. I care deeply about <strong>ethical, privacy-first technology</strong> — the kind people can actually trust.</p>
+          <div class="sig">Eainan ♡</div>
+        </div>
+        <aside class="facts reveal">
+          <h3>Quick facts</h3>
+          <ul>
+            <li><span>Age</span><strong>21</strong></li>
+            <li><span>Coding since</span><strong>2018 (age 13)</strong></li>
+            <li><span>Studying</span><strong>BSc Computer Science, MSU</strong></li>
+            <li><span>CGPA</span><strong>3.71 · Dean's List</strong></li>
+            <li><span>Based in</span><strong>Malaysia 🇲🇾</strong></li>
+            <li><span>Speaks</span><strong>English · Malay</strong></li>
+            <li><span>Focus</span><strong>AI/ML · Data · Full-stack</strong></li>
+            <li><span>Off-screen</span><strong>Bouldering · Choir · Debate</strong></li>
+          </ul>
+        </aside>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="container">
-      <h3>Projects</h3>
+    <!-- ============ JOURNEY ============ -->
+    <section id="journey" class="container section">
+      <div class="section-head reveal">
+        <span class="eyebrow">02 — The journey</span>
+        <h2>Eight years of <em>building</em>.</h2>
+        <p class="section-sub">From a curious 13-year-old to an AI &amp; data builder — the milestones so far.</p>
+      </div>
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <span class="tl-year">2018</span>
+          <div class="tl-card">
+            <span class="tl-age">Age 13</span>
+            <h3>Hello, world.</h3>
+            <p>Joined the Pure Science with Computer Science stream at SMK Tengku Ampuan Rahimah and wrote my first programs. Took on leadership early as Chairman of Scouts — leading the team to <strong>"Best Uniformed Unit"</strong>.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-year">2019–22</span>
+          <div class="tl-card">
+            <span class="tl-age">Ages 14–17</span>
+            <h3>Code, clubs &amp; the stage</h3>
+            <p>Deepened programming fundamentals while serving as Vice Chairman of School Librarians (<strong>Leadership Award</strong>), Secretary of the STEM Club, and representing my school in debate, public speaking, choral speaking and poetry.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-year">2023</span>
+          <div class="tl-card">
+            <span class="tl-age">Age 18</span>
+            <h3>Matriculation &amp; first job</h3>
+            <p>Entered Malacca Matriculation College (Physical Science). Worked at Kocek handling coin-to-digital currency transactions — my first look at fintech up close.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-year">2024</span>
+          <div class="tl-card">
+            <span class="tl-age">Age 19</span>
+            <h3>University begins</h3>
+            <p>Started my Bachelor in Computer Science at MSU. Joined Camp5 as a Front Desk &amp; Bouldering Guide, creating multimedia content for their marketing.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-year">2025</span>
+          <div class="tl-card">
+            <span class="tl-age">Age 20</span>
+            <h3>Teaching &amp; AI</h3>
+            <p>Became a freelance Computer Science tutor. Built my first serious AI work — YOLO-based <strong>MSU SmartPark</strong> and an explainable churn-prediction model for <strong>Playlytics Studios</strong>.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-year">2026</span>
+          <div class="tl-card glow">
+            <span class="tl-age">Age 21 · Now</span>
+            <h3>Building at full speed</h3>
+            <p>Shipped <strong>SynergyMind</strong> (ML + BI), <strong>Codex</strong> (Flutter + Firebase) and <strong>GlobeTalk</strong> architecture — and now leading my final-year project <strong>MySecureBI</strong>, a private multi-agent AI framework for Malaysian SMEs.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="container section">
+      <div class="section-head reveal">
+        <span class="eyebrow">03 — Selected work</span>
+        <h2>Things I've <em>made</em>.</h2>
+        <p class="section-sub">AI, machine learning, data governance, mobile and systems design.</p>
+      </div>
+
+      <article class="featured reveal">
+        <div class="featured-body">
+          <span class="tag-flag">★ Final Year Project</span>
+          <h3>MySecureBI</h3>
+          <p class="featured-tagline">Automated multi-agent analytics &amp; reporting for SMEs in Malaysia</p>
+          <p>A secure, fully local multi-agent AI framework that automates the whole business-intelligence workflow — data cleaning, statistical analysis, visualisation, strategic sales insights and error detection — while keeping <strong>100% of the data on-premise</strong> for complete privacy.</p>
+          <ul class="tags"><li>Multi-Agent AI</li><li>LLMs</li><li>Python</li><li>Business Intelligence</li><li>Privacy-first</li></ul>
+        </div>
+        <div class="featured-visual" aria-hidden="true">
+          <div class="agent-graph">
+            <div class="node core">Orchestrator</div>
+            <div class="node n1">Cleaner</div>
+            <div class="node n2">Analyst</div>
+            <div class="node n3">Visualiser</div>
+            <div class="node n4">Strategist</div>
+            <div class="node n5">Auditor</div>
+            <svg viewBox="0 0 300 300" class="links"><circle cx="150" cy="150" r="105"/></svg>
+          </div>
+        </div>
+      </article>
+
+      <div class="filters reveal" role="tablist" aria-label="Filter projects">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="ai">AI &amp; ML</button>
+        <button class="filter" data-filter="data">Data &amp; BI</button>
+        <button class="filter" data-filter="mobile">Mobile &amp; Web</button>
+        <button class="filter" data-filter="arch">Architecture &amp; Ethics</button>
+      </div>
+
       <div class="project-grid">
-        <article class="project">
-          <h4>To-Do List Web App</h4>
-          <p>Simple task manager built with HTML, CSS, and JavaScript using LocalStorage to persist data.</p>
-          <a href="https://github.com/eainoon/todo-app" target="_blank">View Code</a>
+        <article class="project reveal" data-cat="ai">
+          <div class="p-top"><span class="p-icon">🧠</span><span class="p-date">Jun 2026</span></div>
+          <h3>SynergyMind — ML Platform</h3>
+          <p>Proactive ML web app predicting psychological stress factors in university populations. Dual-pipeline design: a tuned neural network for structured data and an NLP keyword-detection model for free text.</p>
+          <ul class="tags"><li>Flask</li><li>Keras</li><li>NLP</li><li>Python</li></ul>
         </article>
 
-        <article class="project">
-          <h4>GPA Calculator</h4>
-          <p>Interactive GPA calculator that converts grades and credits into semester averages.</p>
-          <a href="https://github.com/eainoon/gpa-calculator" target="_blank">View Code</a>
+        <article class="project reveal" data-cat="data">
+          <div class="p-top"><span class="p-icon">🔐</span><span class="p-date">Jun 2026</span></div>
+          <h3>SynergyMind — Data Governance</h3>
+          <p>Secure data governance framework and Star Schema in Power BI for sensitive behavioural data, with Row-Level Security and AES-256 encryption enforcing strict role-based access.</p>
+          <ul class="tags"><li>Power BI</li><li>Star Schema</li><li>RLS</li><li>AES-256</li></ul>
         </article>
+
+        <article class="project reveal" data-cat="mobile">
+          <div class="p-top"><span class="p-icon">📱</span><span class="p-date">May 2026</span></div>
+          <h3>Codex — Story Sharing App</h3>
+          <p>Cross-platform mobile app to draft, edit and publish stories. Firebase backend with Cloud Firestore and Auth for real-time sync and secure CRUD, built on Clean Architecture.</p>
+          <ul class="tags"><li>Flutter</li><li>Dart</li><li>Firebase</li></ul>
+          <a class="p-link" href="https://github.com/eainoon/codex" target="_blank" rel="noopener">View code ↗</a>
+        </article>
+
+        <article class="project reveal" data-cat="arch">
+          <div class="p-top"><span class="p-icon">⚖️</span><span class="p-date">Aug 2026</span></div>
+          <h3>Social &amp; Ethical Tech Framework</h3>
+          <p>Analysis of the privacy and national-security implications of <em>TikTok Inc. v. Garland</em>, proposing a five-layer protection framework: tech-neutral privacy law, security reviews and verified data localisation.</p>
+          <ul class="tags"><li>Tech Policy</li><li>Privacy</li><li>Ethics</li></ul>
+        </article>
+
+        <article class="project reveal" data-cat="arch">
+          <div class="p-top"><span class="p-icon">🌏</span><span class="p-date">Jan 2026</span></div>
+          <h3>GlobeTalk — System Architecture</h3>
+          <p>Complete OOAD for an AI-driven travel guide &amp; language-learning platform. Class, Component and Deployment UML for a 3-tier client-server system on PostgreSQL and REST APIs.</p>
+          <ul class="tags"><li>OOAD</li><li>UML</li><li>PostgreSQL</li><li>REST</li></ul>
+        </article>
+
+        <article class="project reveal" data-cat="ai data">
+          <div class="p-top"><span class="p-icon">🎮</span><span class="p-date">Dec 2025</span></div>
+          <h3>Playlytics — Churn Prediction</h3>
+          <p>Random Forest model flagging player churn risk in live-service games, with Explainable AI (SHAP values) turning predictions into human-readable, ethical decision support.</p>
+          <ul class="tags"><li>Random Forest</li><li>SHAP</li><li>XAI</li><li>Data Science</li></ul>
+        </article>
+
+        <article class="project reveal" data-cat="ai">
+          <div class="p-top"><span class="p-icon">🚗</span><span class="p-date">Dec 2025</span></div>
+          <h3>MSU SmartPark</h3>
+          <p>AI-enhanced smart parking with YOLOv12 + OpenCV for real-time vehicle detection and slot classification, Edge AI processing, NLP voice alerts for drivers, and licence-plate blurring for privacy.</p>
+          <ul class="tags"><li>YOLOv12</li><li>OpenCV</li><li>Edge AI</li><li>NLP</li></ul>
+        </article>
+
+        <article class="project reveal" data-cat="mobile">
+          <div class="p-top"><span class="p-icon">🎓</span><span class="p-date">Java</span></div>
+          <h3>Student Management System</h3>
+          <p>Object-oriented Java application for managing student records — adding, updating, searching and organising data with clean class design.</p>
+          <ul class="tags"><li>Java</li><li>OOP</li></ul>
+          <a class="p-link" href="https://github.com/eainoon/StudentManagementSystem" target="_blank" rel="noopener">View code ↗</a>
+        </article>
+      </div>
+
+      <div class="mini-projects reveal">
+        <span class="mini-label">Earlier web builds →</span>
+        <a href="https://github.com/eainoon/weather-app" target="_blank" rel="noopener">☁️ Weather App</a>
+        <a href="https://github.com/eainoon/quiz-app" target="_blank" rel="noopener">❓ Quiz App</a>
+        <a href="https://github.com/eainoon/gpa-calculator" target="_blank" rel="noopener">🧮 GPA Calculator</a>
+        <a href="https://github.com/eainoon/todo-app" target="_blank" rel="noopener">✅ To-Do App</a>
       </div>
     </section>
 
- <article class="project">
-          <h4>Quiz App</h4>
-          <p>Multiple choice quiz questions with scores at the end.</p>
-          <a href="https://github.com/eainoon/quiz-app" target="_blank">View Code</a>
-        </article>
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">04 — Toolkit</span>
+          <h2>What I <em>work with</em>.</h2>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Python</span><span>✦</span><span>Java</span><span>✦</span><span>JavaScript</span><span>✦</span><span>Dart</span><span>✦</span><span>C++</span><span>✦</span><span>PHP</span><span>✦</span><span>Flutter</span><span>✦</span><span>Keras</span><span>✦</span><span>YOLO</span><span>✦</span><span>Power BI</span><span>✦</span><span>Firebase</span><span>✦</span><span>PostgreSQL</span><span>✦</span>
+          <span>Python</span><span>✦</span><span>Java</span><span>✦</span><span>JavaScript</span><span>✦</span><span>Dart</span><span>✦</span><span>C++</span><span>✦</span><span>PHP</span><span>✦</span><span>Flutter</span><span>✦</span><span>Keras</span><span>✦</span><span>YOLO</span><span>✦</span><span>Power BI</span><span>✦</span><span>Firebase</span><span>✦</span><span>PostgreSQL</span><span>✦</span>
+        </div>
+      </div>
+
+      <div class="container skills-grid">
+        <div class="skill-card reveal">
+          <span class="sk-icon">⌨️</span>
+          <h3>Languages</h3>
+          <ul class="chips"><li>Python</li><li>Java</li><li>JavaScript</li><li>Dart</li><li>C++</li><li>PHP</li><li>HTML</li><li>CSS</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="sk-icon">🤖</span>
+          <h3>AI &amp; Data</h3>
+          <ul class="chips"><li>Machine Learning</li><li>Neural Networks</li><li>Keras</li><li>NLP</li><li>Computer Vision</li><li>YOLO / OpenCV</li><li>Random Forest</li><li>SHAP / XAI</li><li>Multi-Agent AI</li><li>Power BI</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="sk-icon">🛠️</span>
+          <h3>Engineering</h3>
+          <ul class="chips"><li>Flutter</li><li>Flask</li><li>Firebase</li><li>PostgreSQL</li><li>REST APIs</li><li>Clean Architecture</li><li>OOAD &amp; UML</li><li>Git &amp; GitHub</li><li>VS Code</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="sk-icon">🎨</span>
+          <h3>Design &amp; People</h3>
+          <ul class="chips"><li>Web Design</li><li>Multimedia</li><li>Canva</li><li>Leadership</li><li>Public Speaking</li><li>Debate</li><li>Negotiation</li><li>Tutoring</li><li>Project Coordination</li></ul>
+        </div>
       </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="container">
-      <h3>Skills</h3>
-      <ul>
-        <li>Python · Java · JavaScript · HTML · CSS · C++ · PHP</li>
-        <li>Web Development · Git & GitHub · Basic Data Analysis</li>
-        <li>Multimedia Design · Public Speaking · Leadership</li>
-      </ul>
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="container section">
+      <div class="section-head reveal">
+        <span class="eyebrow">05 — Experience</span>
+        <h2>Where I've <em>worked</em>.</h2>
+      </div>
+      <div class="exp-list">
+        <article class="exp reveal">
+          <div class="exp-when">May 2025 — Present</div>
+          <div class="exp-body">
+            <h3>Computer Science Tutor <span>· Freelance</span></h3>
+            <ul>
+              <li>Personalised tutoring for SPM-level students in programming fundamentals, coding logic and project-based learning.</li>
+              <li>Simplified data structures, algorithms and software design into approachable lessons.</li>
+              <li>Raised student performance and confidence through interactive teaching.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="exp reveal">
+          <div class="exp-when">May 2024 — Apr 2025</div>
+          <div class="exp-body">
+            <h3>Front Desk &amp; Bouldering Guide <span>· Camp5 Utropolis</span></h3>
+            <ul>
+              <li>Managed customer interactions, bookings and payment processing.</li>
+              <li>Guided climbers on safety procedures and proper technique.</li>
+              <li>Created multimedia content for marketing and social engagement.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="exp reveal">
+          <div class="exp-when">Apr 2023 — Jun 2023</div>
+          <div class="exp-body">
+            <h3>Front Desk Staff <span>· Kocek, Subang Parade</span></h3>
+            <ul>
+              <li>Handled customer service and coin-to-digital currency conversions.</li>
+              <li>Maintained transaction accuracy and operational efficiency.</li>
+              <li>Supported promotional events and daily branch operations.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu reveal">
+          <span class="edu-icon">🎓</span>
+          <h3>Bachelor in Computer Science</h3>
+          <p>Management and Science University</p>
+          <span class="edu-meta">Sep 2024 — Present · <strong>CGPA 3.71</strong></span>
+        </div>
+        <div class="edu reveal">
+          <span class="edu-icon">🔬</span>
+          <h3>Physical Science Stream</h3>
+          <p>Malacca Matriculation College</p>
+          <span class="edu-meta">Jul 2023 — May 2024 · CGPA 3.29</span>
+        </div>
+        <div class="edu reveal">
+          <span class="edu-icon">💡</span>
+          <h3>Pure Science + Computer Science</h3>
+          <p>SMK Tengku Ampuan Rahimah</p>
+          <span class="edu-meta">Jan 2018 — Dec 2022</span>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact -->
-  <section id="contact" class="container">
-  <h3>Contact Me 💌</h3>
-  <p>Have a question or want to collaborate? Feel free to drop a message below!</p>
+    <!-- ============ LEADERSHIP ============ -->
+    <section id="leadership" class="container section">
+      <div class="section-head reveal">
+        <span class="eyebrow">06 — Leadership &amp; honours</span>
+        <h2>Beyond the <em>code</em>.</h2>
+      </div>
+      <div class="lead-grid">
+        <div class="lead-card highlight reveal"><span>🏆</span><h3>Dean's List Award</h3><p>Management and Science University</p></div>
+        <div class="lead-card highlight reveal"><span>🎖️</span><h3>Chairman, Scouts</h3><p>Led the team to "Best Uniformed Unit"</p></div>
+        <div class="lead-card highlight reveal"><span>📚</span><h3>Vice Chairman, Librarians</h3><p>Leadership Award recipient</p></div>
+        <div class="lead-card reveal"><span>🕵️</span><h3>Secretary</h3><p>Computer Forensic Club (CFC)</p></div>
+        <div class="lead-card reveal"><span>🎤</span><h3>Event Emcee</h3><p>MSU Events</p></div>
+        <div class="lead-card reveal"><span>🎶</span><h3>Activity Executive</h3><p>De'Voice Choir Club</p></div>
+        <div class="lead-card reveal"><span>🗣️</span><h3>Debate Executive</h3><p>Debate Club</p></div>
+        <div class="lead-card reveal"><span>🧪</span><h3>Secretary</h3><p>STEM Club · Badminton Club · Temenggung House</p></div>
+      </div>
+      <p class="lead-note reveal">Represented my school in Choral Speaking, Debate, Public Speaking, Poetry and Article Trailer competitions.</p>
+    </section>
 
-  <form action="https://formspree.io/f/xrbonnqj" method="POST" class="contact-form">
-    <div class="form-group">
-      <input type="text" name="name" placeholder="Your Name" required />
-    </div>
+    <!-- ============ RESUME CTA ============ -->
+    <section class="container section">
+      <div class="cta-card reveal">
+        <div>
+          <span class="eyebrow">The full story</span>
+          <h2>Want everything on <em>one page</em>?</h2>
+          <p>Grab my résumé — experience, education, projects and skills in a recruiter-friendly format.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="assets/Eainan-Salsabila-Resume.pdf" class="btn btn-light" download>Download PDF</a>
+          <a href="assets/Eainan-Salsabila-Resume.pdf" class="btn btn-outline-light" target="_blank" rel="noopener">View online ↗</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="form-group">
-      <input type="email" name="_replyto" placeholder="Your Email" required />
-    </div>
-
-    <div class="form-group">
-      <textarea name="message" placeholder="Your Message..." rows="5" required></textarea>
-    </div>
-
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="container section">
+      <div class="contact-grid">
+        <div class="contact-intro reveal">
+          <span class="eyebrow">07 — Contact</span>
+          <h2>Let's build something <em>wonderful</em>.</h2>
+          <p>Internships, collaborations, research or just a hello — my inbox is always open.</p>
+          <ul class="contact-links">
+            <li><a href="mailto:eainans5@gmail.com"><span>✉️</span>eainans5@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/eainan-salsabila-713628366/" target="_blank" rel="noopener"><span>💼</span>LinkedIn · Eainan Salsabila</a></li>
+            <li><a href="https://github.com/eainoon" target="_blank" rel="noopener"><span>🐙</span>GitHub · eainoon</a></li>
+            <li><a href="https://replit.com/@eainans07" target="_blank" rel="noopener"><span>🌀</span>Replit · eainans07</a></li>
+          </ul>
+        </div>
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xrbonnqj" method="POST">
+          <div class="field">
+            <input type="text" id="name" name="name" placeholder=" " required />
+            <label for="name">Your name</label>
+          </div>
+          <div class="field">
+            <input type="email" id="email" name="_replyto" placeholder=" " required />
+            <label for="email">Your email</label>
+          </div>
+          <div class="field">
+            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Your message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send message
+            <svg viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2-7-8-1z"/></svg></button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Eainan Salsabila · All rights reserved.</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Eainan<span>.</span></a>
+      <p>Designed &amp; built with 💜 by Eainan Salsabila · © <span id="year"></span></p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>

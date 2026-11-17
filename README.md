@@ -1,21 +1,21 @@
-# Eainan Salsabila — Portfolio
+# Eainan Salsabila — Portfolio 💜
 
-Personal portfolio website built with **HTML / CSS / JavaScript**.
+Personal portfolio of **Eainan Salsabila**: Computer Science undergraduate (CGPA 3.71, Dean's List), coding since age 13.
 
-### 🔗 Live Demo
-(After deployment) https://eainoon.github.io/portfolio
+### 🔗 Live
+https://eainoon.github.io/portfolio
 
-### 📚 Features
-- Responsive design  
-- Project showcase with GitHub links  
-- Simple contact section and “Say Hi” button
+### ✨ Features
+- Purple light/dark theme, saved per visitor
+- Animated hero with typing roles, a rotating gradient portrait ring and floating badges
+- Count-up stats, an 8-year journey timeline and scroll-reveal animations
+- Featured final-year project plus filterable project cards with spotlight/tilt hover
+- Skills marquee, experience, education, leadership and honours
+- Résumé download and a working contact form (Formspree)
+- Fully responsive, respects reduced-motion settings
 
-### ⚙️ How to run locally
-1. Clone this repo:  
-   `git clone https://github.com/eainoon/portfolio.git`
-2. Open folder in VS Code.  
-3. Right-click `index.html` → *Open with Live Server* (install extension).  
-4. The site opens at `http://localhost:5500`.
+### 🛠️ Built with
+HTML · CSS · vanilla JavaScript · Google Fonts (Fraunces, Plus Jakarta Sans, Caveat) · GitHub Pages
 
-### 👩‍💻 Tools
-HTML | CSS | JavaScript | VS Code | GitHub Pages
+### ▶️ Run locally
+Open `index.html` in a browser, or use VS Code's Live Server extension.
