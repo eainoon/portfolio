@@ -85,6 +85,10 @@
     io.observe(el);
   });
 
+  // Keep the languages stat in sync with the Languages card
+  const langCount = $('#langCount'), langChips = $$('#langChips li');
+  if (langCount && langChips.length) langCount.dataset.count = langChips.length;
+
   // ---------- Count-up stats ----------
   const countIO = new IntersectionObserver(entries => {
     entries.forEach(e => {
